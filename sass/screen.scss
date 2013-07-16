@@ -47,6 +47,14 @@ a:hover {
   color: darken(#4CB6DC, 20%);
 }
 
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: oblique;
+}
+
 h1 {
   font-size: (32/18) * 1em;
   line-height: 1;
