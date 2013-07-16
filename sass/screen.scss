@@ -1,0 +1,127 @@
+@import "compass/reset";
+@import "compass/typography";
+@import "compass/css3/transition";
+
+$base-font-size: 18px;
+$base-line-height: 24px;
+$relative-font-sizing: true;
+
+$color-body: #47575B;
+
+%block-center {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 840px;
+  min-width: 300px;
+
+  @media screen and (max-width: 850px) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+%hide {
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+@include establish-baseline;
+
+body {
+  background-color: white;
+  color: $color-body;
+  font-family: 'Bree Serif', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+a, a:link, a:visited {
+  color: #4CB6DC;
+  text-decoration: none;
+  @include transition(color 0.4s);
+}
+
+a:hover {
+  color: darken(#4CB6DC, 20%);
+}
+
+h1 {
+  font-size: (32/18) * 1em;
+  line-height: 1;
+  margin-bottom: (6/32) * 1em;
+}
+
+h2, h3 {
+  color: #E53B2C;
+  font-size: (24/18) * 1em;
+  margin-bottom: (6/24) * 1em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+ul {
+  margin-bottom: 2em;
+  margin-left: (30/18) * 1em;
+
+  li {
+    list-style-type: disc;
+  }
+  ul li {
+    list-style-type: circle;
+  }
+}
+
+header, article, section > div {
+  @extend %block-center;
+}
+
+.section-header {
+  background-color: #69BEC5;
+  color: white;
+  padding-bottom: 1px;
+  padding-top: (38/18) * 1em;
+
+  header {
+    color: $color-body;
+
+    p {
+      font-size: (24/18) * 1em;
+    }
+    h2 {
+      @extend %hide;
+    }
+  }
+  article {
+    font-size: (20/18) * 1em;
+    line-height: 1.5em;
+  }
+}
+
+.section-skills {
+  padding-top: (38/18) * 1em;
+  padding-bottom: 1px;
+
+  header h2 {
+    @extend %hide;
+  }
+}
+
+.section-bottom {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #ececec;
+}
+
+.section-apply {
+  padding-top: (38/18) * 1em;
+}
+
+.section-footer {
+  @extend %block-center;
+  text-align: right;
+  margin-bottom: 2em;
+}
