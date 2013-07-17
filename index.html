@@ -13,6 +13,11 @@
 </head>
 <body>
   <div class="section-header">
+    <div class="social-buttons">
+      <div class="fb-like" data-href="http://emprego.front.no" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="lucida grande" data-action="recommend"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://emprego.front.no" data-text="Oferta de emprego no Funchal: CMS Developer" data-via="frontkom" data-lang="pt">Tweetar</a>
+    </div>
+
     <header>
       <h1>CMS Developer</h1>
       <p>Funchal</p>
@@ -105,5 +110,15 @@
       <a href="http://frontkom.no" title="Frontkom"><img src="./images/logo.png" alt="Frontkom"></a>
     </footer>
   </div>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_PT/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
 </html>
