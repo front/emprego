@@ -92,6 +92,7 @@ header, article, section > div {
   color: white;
   padding-bottom: 1px;
   padding-top: (38/18) * 1em;
+  padding-bottom: (10/18) * 1em;
 
   header {
     color: $color-body;
@@ -118,7 +119,7 @@ header, article, section > div {
 
 .section-skills {
   padding-top: (38/18) * 1em;
-  padding-bottom: 1px;
+  padding-bottom: (10/18) * 1em;
 
   header h2 {
     @extend %hide;
