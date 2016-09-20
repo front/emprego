@@ -74,6 +74,12 @@ h2, h3 {
 
 h3 {
   font-size: (21/18) * 1em;
+
+  span {
+    float: left;
+    font-size: (18/21) * 1em;
+    margin-left: -1.5em;
+  }
 }
 
 p {
