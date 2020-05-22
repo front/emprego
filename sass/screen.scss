@@ -32,7 +32,7 @@ $color-body: #000;
 body {
   background-color: white;
   color: $color-body;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Red Hat Text', sans-serif;
   font-weight: 300;
 
   @media screen and (max-width: 600px) {
@@ -52,7 +52,7 @@ a:hover {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 em {
@@ -68,7 +68,7 @@ h1 {
 h2, h3 {
   font-size: (24/18) * 1em;
   line-height: (31/24) * 1em;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0.5em;
 }
 
@@ -116,6 +116,26 @@ ul {
     display: block;
     max-width: 50%;
     margin: 6.6% auto 8%;
+  }
+
+  > h1 {
+    font-size: 76px;
+    font-weight: 700;
+    color: rgb(53, 50, 60);
+    text-align: left;
+    margin: 8% auto;
+    line-height: 1.2;
+        letter-spacing: -0.02em;
+
+
+    span {
+      background-color: #F86233;
+      border-radius: 0.3em;
+      border-bottom-right-radius: 0;
+      color: #FFF;
+      display: inline-block;
+      padding: 0 0.2em;
+    }
   }
 
   ul {
