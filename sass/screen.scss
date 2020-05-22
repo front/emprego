@@ -119,14 +119,21 @@ ul {
   }
 
   > h1 {
-    font-size: 76px;
+    font-size: 36px;
     font-weight: 700;
     color: rgb(53, 50, 60);
     text-align: left;
     margin: 8% auto;
     line-height: 1.2;
-        letter-spacing: -0.02em;
+    letter-spacing: -0.02em;
 
+    @media (min-width: 640px) {
+      font-size: 56px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 76px;
+    }
 
     span {
       background-color: #F86233;
